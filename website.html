@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p>Простой сайт созданный в блокноте</p>
+    </header>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="content">
+        <h2>О нашем сайте</h2>
+        <p>Это пример простого веб-сайта, который можно создать используя только блокнот.</p>
+        
+        <h3>Наши преимущества:</h3>
+        <ul>
+            <li>Простота создания</li>
+            <li>Не требует специальных программ</li>
+            <li>Быстрая загрузка</li>
+            <li>Подходит для начинающих</li>
+        </ul>
+
+        <h3>Пример изображения:</h3>
+        <img src="istockphoto-1298894806-612x612.jpg" alt="Пример изображения">
+        
+        <h3>Контактная форма:</h3>
+        <form>
+            <label for="name">Имя:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            
+            <input type="submit" value="Отправить" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Мой простой сайт. Все права защищены.</p>
+    </footer>
+
+    <script>
+        // Простой JavaScript для примера
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за ваше сообщение!');
+        });
+    </script>
+</body>
+</html>
